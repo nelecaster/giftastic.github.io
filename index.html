@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animal Gifs!</title>
+    <link rel="stylesheet" href="assets\css\style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets\javascript\app.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid bg-info border border-dark rounded">
+            <div class="container">
+              <h1 class="display-4 text-center text-light">Animal Gif Search</h1>
+              <br>
+              <p class="lead text-center text-light">Click a preset button to get some gifs, or type an animal into the text box if you're looking for an animal not listed</p>
+            </div>
+          </div>
+    
+        <!-- Movies will get dumped here -->
+        <div class="card bg-light border border-dark rounded">
+            <div class="card-body text-center">
+        <div class="card-header bg-secondary rounded"><div id="animal-buttons"></div></div>
+        <br>
+    
+        <form id="animal-form">
+          <label for="animal-input text-secondary">Add an Animal!</label>
+          <input type="text" id="animal-input">
+          <br>
+        
+    
+          <!-- Button triggers new movie to be added -->
+          <input class="btn-info" id="add-animal" type="submit" value="Add an Animal!">
+          <div id="animals-view">
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="card bg-secondary">
+            <div class="card-body">
+          </div>
+          <div class="gifs-appear-here text-center text-light">
+              
+          </div>
+        </div>
+    </div>
+        </form>
+    
+
+    </div>
+</body>
+</html>
